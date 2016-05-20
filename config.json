@@ -1,0 +1,28 @@
+{
+  "_comment": [
+     "config.json: For Galileo Gen2 PWM example",
+     "Modification History:",
+     "19apr16,m_h  Updated for SDKv2",
+     "08aug15,ed   Added lang, visibility & executable tags",
+     "28may15,ed   Initial version"
+     ],
+  "icon": "images/galileo_20_20.png",
+  "name": "Galileo PWM",
+  "description":"An example of using PWM on Intel Galileo Gen2",
+  "tags": [
+     "galileogen2",
+     "vxworks-7"
+  ],
+  "lang":"C",
+  "cmds": {
+     "clone":"prjClone.sh -cfg %config% -prj %dest%"
+  },
+  "doc": "docs/galileo_pwm_example.md",
+  "visibility": "local",
+  "executable": "bin/%projname%",
+  "type": "application",
+  "project_data": {
+    "init_clone":
+        { "fetch": { "scm":"git", "url":"git@github.com:wind-river-vxworks7/vxw-galileo2-pwm-app.git" } }
+  }
+}
